@@ -73,5 +73,4 @@ E caso se tente a mesma query novamente, será identificado que tal email já es
 
 ## Nota
 
-A autenticação não foi implementada por uma mera questão de prazo de entrega. Como essa era a parte que eu considerava a mais difícil (afinal, nunca tive contacto com essa área), deixei para implementar ela por último. Por mais que eu tenha até inicializado a implementação, percebi que não teria tempo o suficiente e resolvi removê-la e entregar o código sem essa funcionalidade, infelizmente.
-
+A autenticação não foi implementada por uma mera questão de prazo de entrega. Como essa era a parte que eu considerava a mais difícil (afinal, nunca tive contacto com essa área), deixei para implementar ela por último. Por mais que a implementação tenha até sido inicializado, percebi que não haveria tempo suficiente e resolvi removê-la e entregar o código sem essa funcionalidade.
