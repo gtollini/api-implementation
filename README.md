@@ -32,9 +32,9 @@ Ou, pode-se apenas gerar um banco de dados com essas configurações.
 Suas tabelas são criadas através de três queries em SQL, que se encontram no arquivo db_creator.sql:
 
 ```
-  CREATE TABLE user 			(userId  INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(127)	, password VARCHAR(63) 		);
-  CREATE TABLE orderrequest 	(orderId INT AUTO_INCREMENT PRIMARY KEY, userId INT 		, opTimestamp VARCHAR(23)	, amount FLOAT, USDperBTC FLOAT		 , opType BIT );
-  CREATE TABLE price 			(priceId INT AUTO_INCREMENT PRIMARY KEY, currency VARCHAR(4), priceTimestamp VARCHAR(23), value FLOAT , exchange VARCHAR (63), diff FLOAT );
+  CREATE TABLE user (userId  INT AUTO_INCREMENT PRIMARY KEY, email VARCHAR(127)	, password VARCHAR(63));
+  CREATE TABLE orderrequest (orderId INT AUTO_INCREMENT PRIMARY KEY, userId INT	, opTimestamp VARCHAR(23), amount FLOAT, USDperBTC FLOAT, opType BIT);
+  CREATE TABLE price (priceId INT AUTO_INCREMENT PRIMARY KEY, currency VARCHAR(4), priceTimestamp VARCHAR(23), value FLOAT , exchange VARCHAR (63), diff FLOAT);
 ```
 
 Para efeito de teste e debugging, foi utilizada a ferramenta GraphiQL. Para acessar a sua interface, basta rodar o programa e digitar no navegador:
@@ -68,8 +68,6 @@ E caso se tente a mesma query novamente, será identificado que tal email já es
     "register": "Email já cadastrado"
   }
 }
-```
-
 ```
 
 
